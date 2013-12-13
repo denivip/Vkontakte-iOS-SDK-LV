@@ -204,7 +204,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     }
 
 //    прячем окно, если обработали либо авторизацию, либо отказ от авторизации
-    if ([url hasPrefix:kVkontakteBlankURL]) {
+    if ([url hasPrefix:kVkontakteBlankURL] || [url hasPrefix:kVkontakteBlankURL2]) {
         if (!webView.hidden && [self.delegate respondsToSelector:@selector(VKConnector:willHideWebView:)]) {
 
             [self.delegate VKConnector:self

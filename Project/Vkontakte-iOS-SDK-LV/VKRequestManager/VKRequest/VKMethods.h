@@ -30,7 +30,7 @@
 static NSString *const kVkontakteAPIURL = @"https://api.vk.com/method/";
 static NSString *const kVkontakteAuthorizationURL = @"https://oauth.vk.com/authorize";
 static NSString *const kVkontakteBlankURL = @"https://oauth.vk.com/blank.html";
-
+static NSString *const kVkontakteBlankURL2 = @"http://vk.com/login.php?act=slogin&role=fast&no_redirect=1&to=&s=0";
 // -----------------------------------------------------------------------------
 #pragma mark - Users
 // -----------------------------------------------------------------------------
