@@ -210,6 +210,10 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
             [self.delegate VKConnector:self
                        willHideWebView:webView];
         }
+        if ([url hasPrefix:kVkontakteBlankURL2]) {
+            [self.delegate VKConnector:self
+                connectionErrorOccured:nil];
+        }
     }
 }
 
